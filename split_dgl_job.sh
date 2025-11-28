@@ -25,13 +25,21 @@ conda activate venv
 #source ~/venv/bin/activate
 
 # Run DGL Split Learning
-echo "Starting DGL Split Learning..."
-python split_dgl_implementation.py
+#echo "Starting DGL Split Learning..."
+#python split_dgl_implementation.py
 
-echo "Starting Baseline Split Learning..."
-python baseline_split_learning.py
+#echo "Starting Baseline Split Learning..."
+#python baseline_split_learning.py
 
-echo "Generating comparisons..."
-python compare_results.py
+#echo "Generating comparisons..."
+#python compare_results.py
+
+echo "Starting DGL Split Improved..."
+
+python split_dgl_improved.py
+
+echo "Comparing three from improvement"
+
+python compare_improved.py
 
 echo "Training completed!"
